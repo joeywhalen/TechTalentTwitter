@@ -47,6 +47,10 @@
 					value="Submit" type="Submit" th:text="Submit"></button>
 			</div>
 		</form>
+		<form th:action="@{/login}" method="get">
+			<button class="btn btn-md btn-success btn-block" name="Submit"
+				value="Login" type="Submit">Log in</button>
+		</form>
 	</div>
 	<script th:replace="fragments/scripts"></script>
 </body>
