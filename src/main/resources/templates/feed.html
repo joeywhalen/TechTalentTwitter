@@ -15,7 +15,9 @@
 				@<span th:text="${tweet.user.username}"></span> <small><span
 					th:text="${#dates.format(tweet.createdAt, 'M/d/yy')}"></span></small>
 			</h5>
-			<p th:utext="${tweet.message}"></p>
+			<ul class="list-group">
+				<li class="list-group-item" th:utext="${tweet.message}"></li>
+			</ul>
 		</div>
 		<div th:if="${not #lists.isEmpty(tweetList)}">
 			<h3>Tweets</h3>
