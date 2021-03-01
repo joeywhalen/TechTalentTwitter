@@ -17,6 +17,12 @@
 			</h5>
 			<p th:utext="${tweet.message}"></p>
 		</div>
+		<div th:if="${not #lists.isEmpty(tweetList)}">
+			<h3>Tweets</h3>
+		</div>
+		<div th:if="${#lists.isEmpty(tweetList)}">
+			<h3>No Recent Tweets</h3>
+		</div>
 	</div>
 	<script th:replace="fragments/scripts"></script>
 </body>
