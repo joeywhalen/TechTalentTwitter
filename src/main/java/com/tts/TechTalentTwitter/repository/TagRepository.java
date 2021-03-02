@@ -1,5 +1,5 @@
 package com.tts.TechTalentTwitter.repository;
 
-public class TagRepository {
+public interface TagRepository {
 
 }
